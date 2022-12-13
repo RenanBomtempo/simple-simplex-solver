@@ -22,11 +22,10 @@ def makeMatrixFullRank(A):
 # end makeMatrixFullRank
 
 if __name__ == "__main__":
-    A = np.matrix([[1, 0, 0, 0, 0],
-                   [0, 0, 1, 0, 0],
-                   [0, 0, 0, 1, 0],
-                   [1, 0, 1, 1, 1],
-                   [0, 0, 0, 0, 1]]
+    A = np.matrix([[1, 0, 0, -1],
+                   [0, 1, 0, -1],
+                   [0, 0, 1, -1],
+                   [1, 1, 1, -1]]
                    )
     print(A)
     A, rowsEliminated = makeMatrixFullRank(A)
